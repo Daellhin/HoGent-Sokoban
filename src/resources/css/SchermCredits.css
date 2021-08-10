@@ -1,0 +1,16 @@
+.root{
+    -fx-background-color: black;
+}
+
+.title{
+	-fx-font-family: Caribbean;
+	-fx-font-size: 30.0px;
+	-fx-text-fill: green;
+}
+
+.name{
+	 -fx-font-family: ManuskriptAntDReg;
+   	 -fx-font-size: 30.0px;
+	 -fx-text-fill: white;
+}
+

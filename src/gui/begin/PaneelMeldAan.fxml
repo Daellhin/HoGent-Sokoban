@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="690.0" prefWidth="470.0" styleClass="taalButton" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" />
+      <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" />
+      <RowConstraints minHeight="10.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" />
+      <RowConstraints minHeight="-Infinity" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="270.0" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="lblSokoban" alignment="TOP_CENTER" prefHeight="17.0" prefWidth="247.0" text="Sokoban" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+         <font>
+            <Font name="Rockwell Condensed" size="63.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="100.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lblGebruikersnaam" text="Gebruikersnaam" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="20.0" top="5.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWachtwoord" text="Wachtwoord" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txfGebruikersnaam" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <PasswordField fx:id="pwdWachtwoord" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <TextField fx:id="txfWachtwoord" GridPane.hgrow="NEVER" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <CheckBox fx:id="chbWachtwoord" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#chbWachtwoordOnAction" text="Toon wachtwoord" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnAanmelden" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnAanmeldenOnAction" text="Aanmelden" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets bottom="5.0" />
+         </GridPane.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="hypRegistreer" onAction="#hypRegistreerOnAction" text="Nog geen account?  " GridPane.rowIndex="9" GridPane.valignment="TOP">
+         <font>
+            <Font name="Rockwell" size="14.0" />
+         </font></Hyperlink>
+      <Label fx:id="lblFoutInloggen" ellipsisString="" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" textFill="RED" wrapText="true" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAanmelden" text="Aanmelden" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font name="Rockwell" size="30.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="20.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="btnEn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnEnOnAction" prefHeight="21.0" prefWidth="32.0" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+         <GridPane.margin>
+            <Insets right="80.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnNl" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnNlOnAction" prefHeight="21.0" prefWidth="32.0" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+         <GridPane.margin>
+            <Insets right="40.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnFr" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnFrOnAction" prefHeight="21.0" prefWidth="32.0" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Button>
+   </children>
+</fx:root>

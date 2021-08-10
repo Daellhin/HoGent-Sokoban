@@ -1,0 +1,68 @@
+
+ 	.root{
+     -fx-background-image: url("../images/kaart.png");
+    }
+   
+   #lblSokoban{
+   	-fx-font-family: Caribbean;
+   	-fx-font-size: 48.0px;
+   }
+   
+    #lblAanmelden, #lblRegistreren{
+   	-fx-font-size: 30.0px;
+   }
+  
+   .label, .hyperlink, .check-box, .button{
+   	 -fx-font-family: ManuskriptAntDReg;
+   	 -fx-font-size: 14.0px;
+   }
+   
+   .button{
+  	-fx-background-image: url("../images/button.png");
+   	-fx-background-size: 270.0 33.0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0% 100.0%;
+    -fx-background-color: transparent;  
+	}
+      
+     .button:hover, .button:focused{
+     -fx-background-image: url("../images/button_selected.png");
+     }
+     
+     .hyperlink{
+      -fx-text-fill: black;
+      -fx-border-color: transparent;
+      -fx-underline: true;
+     }
+     
+     #btnEn{
+    -fx-background-image: url("../images/flag/en_flag.png");
+   	-fx-background-size: 32 21;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0% 100.0%;
+    -fx-background-color: transparent;  
+     }
+     
+     #btnNl{
+    -fx-background-image: url("../images/flag/be_flag.png");
+   	-fx-background-size: 32 21;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0% 100.0%;
+    -fx-background-color: transparent;  
+     }
+     
+    #btnFr{
+    -fx-background-image: url("../images/flag/fr_flag.png");
+   	-fx-background-size: 32 21;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0% 100.0%;
+    -fx-background-color: transparent;  
+     }
+     
+     #btnEn:hover, #btnEn:focused, #btnNl:hover, #btnNl:focused, #btnFr:hover, #btnFr:focused{
+         -fx-border-color: black;
+         -fx-border-width: 2;
+         -fx-border-insets: -3;
+
+     }
+ 

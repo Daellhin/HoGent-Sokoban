@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lblSokoban" text="Sokoban" GridPane.halignment="LEFT">
+         <font>
+            <Font size="60.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="60.0" top="60.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lblGebruikersnaam" text="Gebruikersnaam" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="hypSpeel" onAction="#hypSpeelOnAction" text="Speel een spel" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </Hyperlink>
+      <Hyperlink fx:id="hypMaak" onAction="#hypMaakOnAction" text="Maak een nieuw spel" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </Hyperlink>
+      <Hyperlink fx:id="hypWijzig" onAction="#hypWijzigOnAction" text="Wijzig een spel" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </Hyperlink>
+      <Hyperlink fx:id="hypCredits" onAction="#hypCreditsOnAction" text="Credits" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <Hyperlink fx:id="hypAfsluiten" onAction="#hypAfsluitenOnAction" text="Afsluiten" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </Hyperlink>
+   </children>
+</fx:root>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="grpZijpaneel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="250.0" type="GridPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="250.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints vgrow="ALWAYS" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lblSokoban" text="Sokoban" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <font>
+            <Font size="60.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="10.0" top="40.0" />
+         </GridPane.margin></Label>
+      <Label fx:id="lblSpelnaam" text="12345678912345678900" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="40.0" />
+         </GridPane.margin></Label>
+      <TextField fx:id="txfSpelnaam" maxWidth="1.7976931348623157E308" onKeyPressed="#txfSpelnaamOnKeyPressed" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="40.0" right="40.0" top="5.0" />
+         </GridPane.margin>
+      </TextField>
+      <Label fx:id="lblGeefSpelnaam" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="Geef een spelnaam in" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAantalSpelborden" text="Aantal spelborden" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+      <Label fx:id="lblAantalSpelbordenNr" text="0 gij loser" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets bottom="50.0" top="5.0" />
+         </GridPane.margin></Label>
+      <Button fx:id="btnPlaatsMuur" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPlaatsMuurOnAction" text="Plaats muur" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnPlaatsDoel" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPlaatsDoelOnAction" text="Plaats Doel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="lblAantalDoelen" focusTraversable="false" text="1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="30.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="btnPlaatsMannetje" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPlaatsMannetjeOnAction" text="Plaats Mannetje" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnPlaatsKist" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPlaatsKistOnAction" text="Plaats Kist" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="lblAantalKisten" focusTraversable="false" text="1" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="9" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="30.0" top="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="btnVeldLeegmaken" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnVeldLeegmakenOnAction" text="Veld Leegmaken" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+         <GridPane.margin>
+            <Insets bottom="15.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="lblBoodschap" textAlignment="CENTER" textFill="#bd0707" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="40.0" right="40.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lblSucces" textAlignment="CENTER" textFill="#08bd39" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="40.0" right="40.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="btnResetSpelbord" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnResetSpelbordOnAction" text="Reset Spelbord" GridPane.columnIndex="1" GridPane.rowIndex="13">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnVoegSpelbordToe" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnVoegSpelbordToeOnAction" text="Voeg Spelbord toe" GridPane.columnIndex="1" GridPane.rowIndex="16">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnSlaSpelOp" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnSlaSpelOpOnAction" text="Sla spel op" GridPane.columnIndex="1" GridPane.rowIndex="17">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="btnStoppen" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnStoppenOnAction" text="Stoppen" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="18" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="40.0" left="20.0" right="20.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</fx:root>

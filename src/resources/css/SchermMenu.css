@@ -1,0 +1,63 @@
+.root{	
+	-fx-background-image: url("../images/Sokoban.png");
+}
+
+#lblSokoban, #lblKiesSpel{
+	-fx-font-family: Caribbean;
+	-fx-font-size: 60.0px;
+}
+#lblKiesSpel, #lblKiesSpelbord{
+	-fx-font-size: 40.0px;
+}
+
+#lblGebruikersnaam{
+	-fx-font-family: ManuskriptAntDReg;
+}
+
+.hyperlink{
+	-fx-text-fill: black;
+	-fx-border-color: transparent;
+	-fx-underline: false;
+    -fx-font-family: ManuskriptAntDReg;
+   	-fx-font-size: 25.0px;
+}
+
+.hyperlink:hover{
+	-fx-underline: false;
+	-fx-background-image: url("../images/Xmarksthespot.png");
+	-fx-background-size: 25.0px 25.0px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: left center;
+	-fx-border: none;
+}
+
+.auto-hyperlink{
+	-fx-padding: 0 0 0 75;
+
+}
+.auto-hyperlink:hover{
+	-fx-background-position: 45 center;
+}
+.button{
+	-fx-background-image: url("../images/arrow.png");
+   	-fx-background-size: 40.0 40.0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0% 100.0%;
+    -fx-background-color: transparent;  
+}
+#btnOnder {
+	-fx-rotate: 180;
+}
+
+#btnReturn{
+  	-fx-background-image: url("../images/return.png");
+   	-fx-background-size: 40.0 40.0;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100.0% 100.0%;
+    -fx-background-color: transparent;  
+
+}
+
+.button:hover{
+	-fx-background-image: url("../images/arrow_selected.png");
+}
