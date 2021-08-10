@@ -1,5 +1,7 @@
 # HoGent-Sokoban
 
+A project made for the course Projecten-workshops I at HoGent. The goal was to design and code the game Sokoban in Java.
+
 ## Pre-Run
 
 Run [DBInitializer.sql](sql/DBInitializer.sql) in MySQL Workbench
