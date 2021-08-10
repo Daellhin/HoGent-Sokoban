@@ -6,6 +6,11 @@ A project made for the course Projecten-workshops I at HoGent. The goal was to d
 
 Run [DBInitializer.sql](sql/DBInitializer.sql) in MySQL Workbench
 
+Configure Build Path (Module Path)
+- Add JUnit 5
+- Add JavaFX https://gluonhq.com/products/javafx/
+- Add MySQL Connector https://jar-download.com/artifacts/mysql/mysql-connector-java
+
 ## Logins
 
 | Username    | Pasword  | Contents      |
