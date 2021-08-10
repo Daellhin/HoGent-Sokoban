@@ -8,8 +8,8 @@ Run [DBInitializer.sql](sql/DBInitializer.sql) in MySQL Workbench
 
 Configure Build Path (Module Path)
 - Add JUnit 5
-- Add JavaFX https://gluonhq.com/products/javafx/
-- Add MySQL Connector https://jar-download.com/artifacts/mysql/mysql-connector-java
+- Add [JavaFX](https://gluonhq.com/products/javafx/)
+- Add [MySQL Connector](jars/mysql-connector-java-8.0.22.jar)
 
 ## Logins
 
