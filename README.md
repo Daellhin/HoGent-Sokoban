@@ -21,7 +21,8 @@ A project made for the course Projecten-workshops I at HoGent. The goal was to d
 | SpelerAdmin | Pa123456 | Admin         |
 
 ## Create jar
-Run `Build Artifacts` step
+- Run `Build Artifacts` step
+- Execute created .jar by double-clicking or `java -jar HoGent-Sokoban.jar`
 
 ## Screenshots
 
