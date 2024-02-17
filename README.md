@@ -20,6 +20,9 @@ A project made for the course Projecten-workshops I at HoGent. The goal was to d
 | Speler00    | Pa123456 | Normal player |
 | SpelerAdmin | Pa123456 | Admin         |
 
+## Create jar
+Run `Build Artifacts` step
+
 ## Screenshots
 
 ![Login](img/Login.png)
