@@ -1,10 +1,17 @@
 # HoGent-Sokoban
-
 A project made for the course Projecten-workshops I at HoGent. The goal was to design and code the game Sokoban in Java.
 
-## Pre-Run
+## Setup
+### MySQL
+- Run [MySQLDBInitializer.sql](sql/MySQLDBInitializer.sql) in MySQL Workbench
+- Uncomment the MySQL connection string in `Connectie.java`
 
-Run [MySQLDBInitializer.sql](sql/MySQLDBInitializer.sql) in MySQL Workbench
+### MSSQL
+- Check if SQL Server and Windows Authentication are enabled, [Login failed for user sa](https://www.yazilimkodlama.com/sql-server-2/sql-server-18456-hatasi-cozumu-login-failed-for-user-sa/)
+- Check if TCP/IP connections are enabled, [TCP/IP connection to host failed](https://stackoverflow.com/a/18850073/8807613)
+- Check if `sa` user exists in database with same password as in JDBC connection string in `Connectie.java`
+- Uncomment the MSSQL connection string in `Connectie.java`
+- Run [MSSQLDBInitializer.sql](sql/MSSQLDBInitializer.sql) in SQL Server management studio
 
 ## Logins
 
@@ -15,14 +22,14 @@ Run [MySQLDBInitializer.sql](sql/MySQLDBInitializer.sql) in MySQL Workbench
 
 ## Screenshots
 
-![Login](images/Login.png)
+![Login](img/Login.png)
 
-![Home](images/Home.png)
+![Home](img/Home.png)
 
-![Game clasic style](images/GameClassic.png)
+![Game clasic style](img/GameClassic.png)
 
-![Game yellow style](images/GameYellow.png)
+![Game yellow style](img/GameYellow.png)
 
-![Game won](images/GameWon.png)
+![Game won](img/GameWon.png)
 
-![Edit game](images/Edit.png)
+![Edit game](img/Edit.png)
