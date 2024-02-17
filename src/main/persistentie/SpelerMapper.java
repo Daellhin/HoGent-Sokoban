@@ -11,11 +11,11 @@ import domein.Speler;
 public class SpelerMapper {
 
 	// selects
-	private static final String SELECT_SPELER = "SELECT * FROM sokoban.Speler WHERE gebruikersnaam collate latin1_general_cs= ? and wachtwoord collate latin1_general_cs= ?";
-	private static final String BESTAAT_SPELER = "SELECT * FROM sokoban.Speler WHERE gebruikersnaam = ?";
+	private static final String SELECT_SPELER = "SELECT * FROM Speler WHERE gebruikersnaam = ? and wachtwoord = ?";
+	private static final String BESTAAT_SPELER = "SELECT * FROM Speler WHERE gebruikersnaam = ?";
 
 	// inserts
-	private static final String INSERT_SPELER = "INSERT INTO sokoban.Speler (gebruikersnaam, wachtwoord, heeftAdminrechten, naam, voornaam) VALUES (?, ?, ?, ?, ?)";
+	private static final String INSERT_SPELER = "INSERT INTO Speler (gebruikersnaam, wachtwoord, heeftAdminrechten, naam, voornaam) VALUES (?, ?, ?, ?, ?)";
 
 	/**
 	 * Default constructor.

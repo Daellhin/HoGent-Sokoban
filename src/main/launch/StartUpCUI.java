@@ -1,4 +1,4 @@
-package main;
+package launch;
 
 import cui.Sokoban;
 import domein.DomeinController;

@@ -18,28 +18,28 @@ import domein.spelbord.Veld;
 public class SpelMapper {
 
 	// selects
-	private static final String SELECT_SPELNAMEN = "SELECT spelNaam FROM sokoban.Spel";
-	private static final String SELECT_SPEL = "SELECT * FROM sokoban.Spel WHERE spelNaam = ?";
-	private static final String SELECT_COUNT_SPELBORDEN = "SELECT COUNT(*) AS 'aantal' FROM sokoban.Spelbord WHERE spelNaam = ?";
-	private static final String SELECT_SPELBORD = "SELECT * FROM sokoban.Spelbord WHERE spelNaam = ?";
-	private static final String SELECT_SPELSTUK = "SELECT * FROM sokoban.Spelstuk WHERE spelNaam = ? and spelbordNummer = ?";
-	private static final String SELECT_VAK = "SELECT * FROM sokoban.Vak WHERE spelNaam = ? and spelbordNummer = ?";
-	private static final String SELECT_SPELNAAM = "SELECT spelNaam FROM sokoban.Spel WHERE spelerNaam = ?";
+	private static final String SELECT_SPELNAMEN = "SELECT spelNaam FROM Spel";
+	private static final String SELECT_SPEL = "SELECT * FROM Spel WHERE spelNaam = ?";
+	private static final String SELECT_COUNT_SPELBORDEN = "SELECT COUNT(*) AS 'aantal' FROM Spelbord WHERE spelNaam = ?";
+	private static final String SELECT_SPELBORD = "SELECT * FROM Spelbord WHERE spelNaam = ?";
+	private static final String SELECT_SPELSTUK = "SELECT * FROM Spelstuk WHERE spelNaam = ? and spelbordNummer = ?";
+	private static final String SELECT_VAK = "SELECT * FROM Vak WHERE spelNaam = ? and spelbordNummer = ?";
+	private static final String SELECT_SPELNAAM = "SELECT spelNaam FROM Spel WHERE spelerNaam = ?";
 
 	// inserts
-	private static final String INSERT_SPEL = "INSERT INTO sokoban.Spel (spelNaam, spelerNaam) VALUES (?, ?)";
-	private static final String INSERT_SPELBORD = "INSERT INTO sokoban.Spelbord (spelNaam, volgnummer) VALUES (?, ?)";
-	private static final String INSERT_SPELSTUK = "INSERT INTO sokoban.Spelstuk (spelNaam, spelbordNummer, rijPos, kolPos, spelstukType) VALUES (?, ?, ?, ?, ?)";
-	private static final String INSERT_VAK = "INSERT INTO sokoban.Vak (spelNaam, spelbordNummer, rijPos, kolPos, vakType) VALUES (?, ?, ?, ?, ?)";
+	private static final String INSERT_SPEL = "INSERT INTO Spel (spelNaam, spelerNaam) VALUES (?, ?)";
+	private static final String INSERT_SPELBORD = "INSERT INTO Spelbord (spelNaam, volgnummer) VALUES (?, ?)";
+	private static final String INSERT_SPELSTUK = "INSERT INTO Spelstuk (spelNaam, spelbordNummer, rijPos, kolPos, spelstukType) VALUES (?, ?, ?, ?, ?)";
+	private static final String INSERT_VAK = "INSERT INTO Vak (spelNaam, spelbordNummer, rijPos, kolPos, vakType) VALUES (?, ?, ?, ?, ?)";
 
 	// deletes
-	private static final String DELETE_SPEL = "DELETE FROM sokoban.Spel WHERE spelNaam = ?";
-	private static final String DELETE_SPELBORDEN = "DELETE FROM sokoban.Spelbord WHERE spelNaam = ?";
-	private static final String DELETE_SPELSTUKKEN = "DELETE FROM sokoban.Spelstuk WHERE spelNaam = ?";
-	private static final String DELETE_VAKKEN = "DELETE FROM sokoban.Vak WHERE spelNaam = ?";
-	private static final String DELETE_SPELBORD = "DELETE FROM sokoban.Spelbord WHERE spelNaam = ? and volgnummer = ?";
-	private static final String DELETE_VAKKEN_VAN_SPELBORD = "DELETE FROM sokoban.Vak WHERE spelNaam = ? and spelbordNummer = ?";
-	private static final String DELETE_SPELSTUKKEN_VAN_SPELBORD = "DELETE FROM sokoban.Spelstuk WHERE spelNaam = ? and spelbordNummer = ?";
+	private static final String DELETE_SPEL = "DELETE FROM Spel WHERE spelNaam = ?";
+	private static final String DELETE_SPELBORDEN = "DELETE FROM Spelbord WHERE spelNaam = ?";
+	private static final String DELETE_SPELSTUKKEN = "DELETE FROM Spelstuk WHERE spelNaam = ?";
+	private static final String DELETE_VAKKEN = "DELETE FROM Vak WHERE spelNaam = ?";
+	private static final String DELETE_SPELBORD = "DELETE FROM Spelbord WHERE spelNaam = ? and volgnummer = ?";
+	private static final String DELETE_VAKKEN_VAN_SPELBORD = "DELETE FROM Vak WHERE spelNaam = ? and spelbordNummer = ?";
+	private static final String DELETE_SPELSTUKKEN_VAN_SPELBORD = "DELETE FROM Spelstuk WHERE spelNaam = ? and spelbordNummer = ?";
 
 	/**
 	 * Default constructor.

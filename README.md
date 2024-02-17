@@ -4,12 +4,7 @@ A project made for the course Projecten-workshops I at HoGent. The goal was to d
 
 ## Pre-Run
 
-Run [DBInitializer.sql](sql/DBInitializer.sql) in MySQL Workbench
-
-Configure Build Path (Module Path)
-- Add JUnit 5
-- Add [JavaFX](https://gluonhq.com/products/javafx/)
-- Add [MySQL Connector](jars/modulepath/mysql-connector-java-8.0.22.jar)
+Run [MySQLDBInitializer.sql](sql/MySQLDBInitializer.sql) in MySQL Workbench
 
 ## Logins
 
